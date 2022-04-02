@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --btn-color:rgb(0,123,255);
+    --a-color:#007bff;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("./img/background.jpg") /*no-repeat center center/cover*/;
+    background-position-x: center;
+    background-position-y: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn{
+    background: var(--btn-color);
+    
+    padding: 0.6rem 1.4rem;
+}
+
+/*==============MAIN CONTAINER============================*/
+.main__container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.main__container > h2{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form__container{
+    margin: 2rem auto 0;
+    width: 37%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.form__container h3{
+    align-self: center;
+    margin-bottom: 0.5rem;
+    font-size:medium;
+    font-weight: 500;
+}
+
+.form__container > input{
+    width: 100%;
+    border: 1px solid grey; 
+    border-radius: 5px;
+    opacity: 0.6;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.bottom__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.container__left-items{
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.bottom__container-left p{
+    color: #000;
+    font-weight: bold;
+}
+
+.bottom__container-left a{
+    color: var(--a-color);
+}
+
+.bottom__container-left a:hover{
+    color: rgb(0,105, 217); 
+}
+
+.bottom__container-right{
+    margin-top: 0.7rem;
+}
+
+.bottom__container-right a{
+    color: #ffffff;
+    transition: var(--transition);
+}
+
+.bottom__container-right a:hover{
+    background: rgb(0,105, 217);
+}
